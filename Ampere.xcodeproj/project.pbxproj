@@ -60,7 +60,6 @@
 		175218D22D3EB997003DBF85 /* AMPTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPTextFieldCell.m; sourceTree = "<group>"; };
 		175218D42D3EBA61003DBF85 /* AMPPowerCondition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPPowerCondition.h; sourceTree = "<group>"; };
 		175218D52D3EBA8C003DBF85 /* AMPPowerCondition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPPowerCondition.m; sourceTree = "<group>"; };
-		175219422D3F0452003DBF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1798E5F22D376C2E00FC230A /* Ampere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ampere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1798E5F52D376C2E00FC230A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1798E5F62D376C2E00FC230A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -136,7 +135,6 @@
 		1798E5F42D376C2E00FC230A /* Ampere */ = {
 			isa = PBXGroup;
 			children = (
-				175219422D3F0452003DBF85 /* Info.plist */,
 				175218D02D3EB978003DBF85 /* Classes */,
 				1798E5F52D376C2E00FC230A /* AppDelegate.h */,
 				1798E5F62D376C2E00FC230A /* AppDelegate.m */,
