@@ -195,7 +195,7 @@ BOOL containsKey(NSString *key) {
     
     self.labelHeightConstraint.constant = (fontSize >= 13) ? 16 : 14;
     self.labelCenterConstraint.constant = (fontSize >= 13) ? 0 : 0;
-    self.labelTrailingConstraint.constant = ((fontSize > 12) || percentage != 100) ? -3 : -5;
+    self.labelTrailingConstraint.constant = ((fontSize > 12) || percentage == 100) ? -3 : -5;
     [percentageLabel layout];
     
     [self.capacityLabel setStringValue:[NSString stringWithFormat:@"%@%%", percentageString]];
