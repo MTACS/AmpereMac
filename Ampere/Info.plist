@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SMPrivilegedExecutables</key>
+	<dict>
+		<key>com.mtac.ampere.helper</key>
+		<string>identifier "com.mtac.ampere" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Derek Foresman Foresman (HRJ669BBR9)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+	</dict>
+</dict>
+</plist>

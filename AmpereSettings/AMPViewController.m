@@ -24,7 +24,7 @@ NSUserDefaults *defaults;
     
     [[self.temperatureMenu.itemArray objectAtIndex:(temperatureUnit) ? 0 : 1] setState:NSControlStateValueOn];
     
-    [self.temperatureButton setTitle:(temperatureUnit) ? @"Fahrenheit ›" : @"Celsius ›"];
+    [self.temperatureButton setTitle:(temperatureUnit) ? @"Fahrenheit" : @"Celsius"];
     
     NSInteger batteryStyle = [[defaults objectForKey:@"batteryStyle"] integerValue];
     [[self.styleMenu.itemArray objectAtIndex:batteryStyle] setState:NSControlStateValueOn];
@@ -33,19 +33,19 @@ NSUserDefaults *defaults;
     switch (batteryStyle) {
         default:
         case 0:
-            styleType = @"Horizontal ›";
+            styleType = @"Horizontal";
             break;
         case 1:
-            styleType = @"Vertical ›";
+            styleType = @"Vertical";
             break;
         case 2:
-            styleType = @"Outline ›";
+            styleType = @"Outline";
             break;
     }
     [self.styleButton setTitle:styleType];
     
     NSInteger fontSize = [[defaults objectForKey:@"fontSize"] integerValue];
-    [self.fontButton setTitle:[NSString stringWithFormat:@"Size: %ld ›", fontSize]];
+    [self.fontButton setTitle:[NSString stringWithFormat:@"Size: %ld", fontSize]];
     [[self.fontMenu.itemArray objectAtIndex:fontSize - 9] setState:NSControlStateValueOn];
     
     self.loginSwitch.checked = [[defaults objectForKey:@"autoLaunch"] boolValue];
@@ -72,7 +72,7 @@ NSUserDefaults *defaults;
 }
 - (NSMenu *)fontSizeMenu {
     NSMenu *fontMenu = [[NSMenu alloc] initWithTitle:@"Font Size"];
-    for (int i = 9; i <= 13; i++) {
+    for (int i = 9; i <= 12; i++) {
         NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:[NSString stringWithFormat:@"%d", i] action:@selector(menuSelectionChanged:) keyEquivalent:@""];
         [fontMenu addItem:item];
     }
@@ -140,10 +140,10 @@ NSUserDefaults *defaults;
         switch (index) {
             default:
             case 0:
-                [self.temperatureButton setTitle:@"Fahrenheit ›"];
+                [self.temperatureButton setTitle:@"Fahrenheit"];
                 break;
             case 1:
-                [self.temperatureButton setTitle:@"Celsius ›"];
+                [self.temperatureButton setTitle:@"Celsius"];
                 break;
         }
         for (int i = 0; i < self.temperatureMenu.itemArray.count; i++) {
@@ -158,13 +158,13 @@ NSUserDefaults *defaults;
         switch (index) {
             default:
             case 0:
-                [self.styleButton setTitle:@"Horizontal ›"];
+                [self.styleButton setTitle:@"Horizontal"];
                 break;
             case 1:
-                [self.styleButton setTitle:@"Vertical ›"];
+                [self.styleButton setTitle:@"Vertical"];
                 break;
             case 2:
-                [self.styleButton setTitle:@"Outline ›"];
+                [self.styleButton setTitle:@"Outline"];
                 break;
         }
         for (int i = 0; i < self.styleMenu.itemArray.count; i++) {
@@ -176,7 +176,7 @@ NSUserDefaults *defaults;
         [self updateBatteryView];
     } else if ([menu isEqual:self.fontMenu]) {
         NSInteger itemValue = [sender.title integerValue];
-        [self.fontButton setTitle:[NSString stringWithFormat:@"Size: %@ ›", sender.title]];
+        [self.fontButton setTitle:[NSString stringWithFormat:@"Size: %@", sender.title]];
         for (int i = 0; i < self.fontMenu.itemArray.count; i++) {
             NSMenuItem *menuItem = [self.fontMenu.itemArray objectAtIndex:i];
             menuItem.state = (NSControlStateValue)[menuItem isEqual:sender];

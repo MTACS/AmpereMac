@@ -21,7 +21,7 @@
 		179C033C2D3DB6CB00D77B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179C033B2D3DB6CB00D77B07 /* Assets.xcassets */; };
 		179C033F2D3DB6CC00D77B07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179C033D2D3DB6CB00D77B07 /* Main.storyboard */; };
 		179C03412D3DB6CC00D77B07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 179C03402D3DB6CC00D77B07 /* main.m */; };
-		179C034A2D3DB7DC00D77B07 /* AmpereSettings.app in Resources */ = {isa = PBXBuildFile; fileRef = 179C03332D3DB6CB00D77B07 /* AmpereSettings.app */; };
+		179C034A2D3DB7DC00D77B07 /* Ampere .app in Resources */ = {isa = PBXBuildFile; fileRef = 179C03332D3DB6CB00D77B07 /* Ampere .app */; };
 		179C034D2D3DBDC500D77B07 /* AMPWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179C034C2D3DBDC500D77B07 /* AMPWindowController.m */; };
 		17ACB2082D3C6C8100642D49 /* batteryProperties.txt in Resources */ = {isa = PBXBuildFile; fileRef = 17ACB2072D3C6C8100642D49 /* batteryProperties.txt */; };
 		17CC20F72D38B3C4002545D3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CC20F62D38B3C4002545D3 /* ServiceManagement.framework */; };
@@ -37,6 +37,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		175218F12D3EEE83003DBF85 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		17132D812D3DE0BE00C69081 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		17132D842D3DE1F000C69081 /* ITSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITSwitch.h; sourceTree = "<group>"; };
@@ -47,6 +60,7 @@
 		175218D22D3EB997003DBF85 /* AMPTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPTextFieldCell.m; sourceTree = "<group>"; };
 		175218D42D3EBA61003DBF85 /* AMPPowerCondition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPPowerCondition.h; sourceTree = "<group>"; };
 		175218D52D3EBA8C003DBF85 /* AMPPowerCondition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPPowerCondition.m; sourceTree = "<group>"; };
+		175219422D3F0452003DBF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1798E5F22D376C2E00FC230A /* Ampere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ampere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1798E5F52D376C2E00FC230A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1798E5F62D376C2E00FC230A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,7 +68,7 @@
 		1798E6002D376C2F00FC230A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1798E6022D376C2F00FC230A /* Ampere.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ampere.entitlements; sourceTree = "<group>"; };
 		1798E60B2D376C8E00FC230A /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		179C03332D3DB6CB00D77B07 /* AmpereSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmpereSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		179C03332D3DB6CB00D77B07 /* Ampere .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ampere .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		179C03352D3DB6CB00D77B07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		179C03362D3DB6CB00D77B07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		179C03382D3DB6CB00D77B07 /* AMPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPViewController.h; sourceTree = "<group>"; };
@@ -114,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				1798E5F22D376C2E00FC230A /* Ampere.app */,
-				179C03332D3DB6CB00D77B07 /* AmpereSettings.app */,
+				179C03332D3DB6CB00D77B07 /* Ampere .app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +136,7 @@
 		1798E5F42D376C2E00FC230A /* Ampere */ = {
 			isa = PBXGroup;
 			children = (
+				175219422D3F0452003DBF85 /* Info.plist */,
 				175218D02D3EB978003DBF85 /* Classes */,
 				1798E5F52D376C2E00FC230A /* AppDelegate.h */,
 				1798E5F62D376C2E00FC230A /* AppDelegate.m */,
@@ -193,6 +208,7 @@
 				179C032F2D3DB6CB00D77B07 /* Sources */,
 				179C03302D3DB6CB00D77B07 /* Frameworks */,
 				179C03312D3DB6CB00D77B07 /* Resources */,
+				175218F12D3EEE83003DBF85 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
@@ -200,7 +216,7 @@
 			);
 			name = AmpereSettings;
 			productName = AmpereSettings;
-			productReference = 179C03332D3DB6CB00D77B07 /* AmpereSettings.app */;
+			productReference = 179C03332D3DB6CB00D77B07 /* Ampere .app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -244,7 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				179C034A2D3DB7DC00D77B07 /* AmpereSettings.app in Resources */,
+				179C034A2D3DB7DC00D77B07 /* Ampere .app in Resources */,
 				17ACB2082D3C6C8100642D49 /* batteryProperties.txt in Resources */,
 				1798E5FC2D376C2F00FC230A /* Assets.xcassets in Resources */,
 				1798E60E2D376C8E00FC230A /* MainMenu.xib in Resources */,
@@ -387,6 +403,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = com.mtac.ampere.helper;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -442,6 +459,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = com.mtac.ampere.helper;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -462,6 +480,7 @@
 				DEVELOPMENT_TEAM = 7ML54VJYG9;
 				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ampere/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Ampere;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
@@ -474,7 +493,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtac.ampere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -497,6 +516,7 @@
 				DEVELOPMENT_TEAM = 7ML54VJYG9;
 				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ampere/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Ampere;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
@@ -509,7 +529,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtac.ampere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -531,7 +551,7 @@
 				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Ampere;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "2025 © D.F (MTAC)";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -539,10 +559,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtac.ampere.settings;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Ampere ";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
@@ -563,7 +583,7 @@
 				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Ampere;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "2025 © D.F (MTAC)";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -571,9 +591,9 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtac.ampere.settings;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Ampere ";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};

@@ -13,6 +13,7 @@
 @implementation AppDelegate
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     NSColor.ignoresAlpha = NO;
+    
 }
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
 }

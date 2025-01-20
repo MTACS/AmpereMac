@@ -708,15 +708,13 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="ptd-SC-jIO"/>
-                <menuItem title="Settings" id="eSZ-4w-uG9">
-                    <modifierMask key="keyEquivalentModifierMask"/>
+                <menuItem title="Settings" keyEquivalent="," id="eSZ-4w-uG9">
                     <connections>
                         <action selector="showSettings:" target="Voe-Tx-rLC" id="NeU-pU-vKB"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="4qL-DZ-350"/>
-                <menuItem title="Quit Ampere" id="GYv-9m-Tqj">
-                    <modifierMask key="keyEquivalentModifierMask"/>
+                <menuItem title="Quit Ampere" keyEquivalent="q" id="GYv-9m-Tqj">
                     <connections>
                         <action selector="quit:" target="Voe-Tx-rLC" id="Otf-9O-II6"/>
                     </connections>

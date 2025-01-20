@@ -158,7 +158,8 @@ BOOL containsKey(NSString *key) {
     
     double capacityRemaining = [[properties objectForKey:@"CurrentCapacity"] doubleValue];
     double maxCapacity = [[properties objectForKey:@"MaxCapacity"] doubleValue];
-    NSString *percentageString = [NSString stringWithFormat:@"%d", (int)((capacityRemaining / maxCapacity) * 100)];
+    int percentage = (int)((capacityRemaining / maxCapacity) * 100);
+    NSString *percentageString = [NSString stringWithFormat:@"%d", percentage];
     
     NSInteger batteryStyle = [[preferences objectForKey:@"batteryStyle"] integerValue];
     
@@ -194,7 +195,7 @@ BOOL containsKey(NSString *key) {
     
     self.labelHeightConstraint.constant = (fontSize >= 13) ? 16 : 14;
     self.labelCenterConstraint.constant = (fontSize >= 13) ? 0 : 0;
-    self.labelTrailingConstraint.constant = (fontSize >= 13) ? -3 : -4;
+    self.labelTrailingConstraint.constant = ((fontSize > 12) || percentage != 100) ? -3 : -5;
     [percentageLabel layout];
     
     [self.capacityLabel setStringValue:[NSString stringWithFormat:@"%@%%", percentageString]];
@@ -374,26 +375,15 @@ BOOL containsKey(NSString *key) {
     [NSApp performSelector:@selector(terminate:) withObject:nil afterDelay:0.0];
 }
 - (IBAction)showSettings:(id)sender {
-    NSBundle *mainBundle = [NSBundle mainBundle];
     
     // [[NSWorkspace sharedWorkspace] openApplicationAtURL:configuration:completionHandler:] doesn't work but launchApplication: does? 
     
     #pragma clang diagnostic push
     #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-    [[NSWorkspace sharedWorkspace] launchApplication:[[mainBundle resourcePath] stringByAppendingString:@"/AmpereSettings.app"]];
+    NSURL *helperURL = [[NSWorkspace sharedWorkspace] URLForApplicationWithBundleIdentifier:@"com.mtac.ampere.settings"];
+    [[NSWorkspace sharedWorkspace] launchApplication:helperURL.path];
     #pragma clang diagnostic pop
 }
-/* - (IBAction)settings:(id)sender {
-    AmpereSettingsController *prefsController = [[AmpereSettingsController alloc] init];
-    NSWindow *prefsWindow = [prefsController window];
-    NSVisualEffectView *vibrant = [[NSClassFromString(@"NSVisualEffectView") alloc] initWithFrame:[[prefsWindow contentView] bounds]];
-    [vibrant setAutoresizingMask:NSViewWidthSizable|NSViewHeightSizable];
-    [vibrant setBlendingMode:NSVisualEffectBlendingModeBehindWindow];
-    [vibrant setIdentifier:@"rfView"];
-    [[prefsWindow contentView] addSubview:vibrant positioned:NSWindowBelow relativeTo:nil];
-    [prefsWindow makeKeyAndOrderFront:nil];
-    [prefsWindow orderFrontRegardless];
-} */
 - (void)toggleAutoLaunch:(NSNotification *)notification {
     NSDictionary *infoDict = notification.userInfo;
     NSLog(@"%@", infoDict);

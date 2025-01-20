@@ -204,7 +204,7 @@
                                 <tabViewItems>
                                     <tabViewItem label="Options" identifier="optionsItem" id="6jc-Mb-x2s">
                                         <view key="view" id="KpL-q4-0uW">
-                                            <rect key="frame" x="0.0" y="0.0" width="500" height="292"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="501" height="292"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rud-9t-FGR">
@@ -251,7 +251,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <button verticalHuggingPriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="e52-ny-WxQ">
-                                                    <rect key="frame" x="378" y="198" width="104" height="35"/>
+                                                    <rect key="frame" x="379" y="198" width="104" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="2sw-Rr-LIQ"/>
                                                         <constraint firstAttribute="height" constant="30" id="QW6-ZX-cY4"/>
@@ -266,7 +266,7 @@
                                                     </connections>
                                                 </button>
                                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GUa-vU-LS1">
-                                                    <rect key="frame" x="378" y="151" width="104" height="35"/>
+                                                    <rect key="frame" x="379" y="151" width="104" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="8tM-Af-OOZ"/>
                                                         <constraint firstAttribute="height" constant="30" id="YzB-Cq-O8T"/>
@@ -281,7 +281,7 @@
                                                     </connections>
                                                 </button>
                                                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="Ucg-fy-vUc" customClass="ITSwitch">
-                                                    <rect key="frame" x="438" y="251" width="42" height="25"/>
+                                                    <rect key="frame" x="439" y="251" width="42" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="3Z8-6V-fTz"/>
                                                         <constraint firstAttribute="width" constant="42" id="jsV-RI-OEv"/>
@@ -296,7 +296,7 @@
                                                     </connections>
                                                 </customView>
                                                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="vx7-Mh-FIh" customClass="ITSwitch">
-                                                    <rect key="frame" x="438" y="109" width="42" height="25"/>
+                                                    <rect key="frame" x="439" y="109" width="42" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="42" id="VYr-A2-OpL"/>
                                                         <constraint firstAttribute="height" constant="25" id="db4-2a-QeG"/>
@@ -312,7 +312,7 @@
                                                     </connections>
                                                 </customView>
                                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HCX-8m-kaQ">
-                                                    <rect key="frame" x="378" y="57" width="104" height="35"/>
+                                                    <rect key="frame" x="379" y="57" width="104" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="4s8-ty-ayi"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="PhN-Lp-wJW"/>
